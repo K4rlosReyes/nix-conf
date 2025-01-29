@@ -149,9 +149,6 @@
 
   programs.bash = {
     completion.enable = true;
-    promptInit = ''
-    eval "$(starship init bash)"
-    '';
   };
 
   nix.gc = {

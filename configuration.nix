@@ -130,6 +130,14 @@
 
   ];
 
+  # Enable fonts
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "FiraCode" ]; })
+    jetbrains-mono
+  ];
+
+  fonts.fontconfig.enable = true;
+
   services.ollama.enable = true;
 
   nix.extraOptions = ''

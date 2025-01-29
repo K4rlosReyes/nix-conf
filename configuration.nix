@@ -148,7 +148,6 @@
   };
 
   programs.bash = {
-    enable = true;
     promptInit = ''
       PS1='[\u@\h:\w]\$ '
     '';

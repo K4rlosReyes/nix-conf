@@ -100,7 +100,6 @@
     obsidian
     starship
     protonvpn-gui
-    nerd-fonts.fira-code
     btop
 
     (vscode-with-extensions.override {
@@ -132,8 +131,8 @@
 
   # Enable fonts
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-    jetbrains-mono
+    nerd-fonts.zed-mono
+    nerd-fonts.jetbrains-mono
   ];
 
   fonts.fontconfig.enable = true;

@@ -148,7 +148,10 @@
   };
 
   programs.bash = {
-    completion.enable = true;
+    enable = true;
+    promptInit = ''
+      PS1='[\u@\h:\w]\$ '
+    '';
   };
 
   nix.gc = {

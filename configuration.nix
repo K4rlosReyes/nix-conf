@@ -97,6 +97,7 @@
     obsidian
     protonvpn-gui
     btop
+    wireshark
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

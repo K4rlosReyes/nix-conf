@@ -98,7 +98,7 @@
     protonvpn-gui
     btop
     wireshark
-    wayclip
+    wl-clipboard
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

@@ -114,10 +114,10 @@
         vscodevim.vim  # Vim keybindings
         redhat.vscode-yaml  # YAML support
         elixir-lsp.vscode-elixir-ls # Elixir support
-	golang.go
-	dbaeumer.vscode-eslint
-	esbenp.prettier-vscode
-	github.copilot
+        golang.go
+        dbaeumer.vscode-eslint
+        esbenp.prettier-vscode
+        github.copilot
         
         # Git integration
         eamodio.gitlens
@@ -140,7 +140,7 @@
 
   fonts.fontconfig.enable = true;
 
-  services.ollama.enable = true;
+  #services.ollama.enable = true;
 
   nix.extraOptions = ''
       trusted-users = root kr

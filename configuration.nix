@@ -118,6 +118,7 @@
         dbaeumer.vscode-eslint
         esbenp.prettier-vscode
         github.copilot
+	astro-build.astro-vscode # astro support
         
         # Git integration
         eamodio.gitlens

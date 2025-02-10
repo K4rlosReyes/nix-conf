@@ -119,6 +119,7 @@
         esbenp.prettier-vscode
         github.copilot
 	astro-build.astro-vscode # astro support
+	editorconfig.editorconfig
         
         # Git integration
         eamodio.gitlens

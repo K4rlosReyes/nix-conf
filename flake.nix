@@ -1,5 +1,5 @@
 {
-  description = "KR nixos config";
+  description = "KR7X NixOS config";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";

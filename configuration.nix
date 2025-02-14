@@ -74,7 +74,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.kr = {
     isNormalUser = true;
-    description = "Carlos Reyes";
+    description = "Carlos Reyes (KR7X)";
     extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
     #  thunderbird

@@ -159,19 +159,6 @@
     enable = true;
   };
 
-  programs.bash = {
-    promptInit = ''
-      # Enable git prompt
-      if [ -f "/run/current-system/sw/share/git/contrib/completion/git-prompt.sh" ]; then
-        source /run/current-system/sw/share/git/contrib/completion/git-prompt.sh
-        GIT_PS1_SHOWDIRTYSTATE=1
-        GIT_PS1_SHOWSTASHSTATE=1
-        GIT_PS1_SHOWUNTRACKEDFILES=1
-      fi 
-	PS1=' \[\033[38;5;75m\] [\t] \[\033[00m\] \[\033[38;5;214m\]\u\[\033[00m\]@\[\033[38;5;214m\]\h\[\033[00m\] \[\033[38;5;87m\]\w\[\033[00m\] \[\033[38;5;228m\]$(__git_ps1 " (%s)")\[\033[00m\]\n\[\033[38;5;228m\]  λ\[\033[00m\] '
-    '';
-  };
-
   nix.gc = {
     automatic = true;
     dates = "weekly";

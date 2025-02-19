@@ -121,6 +121,9 @@
     hyprsunset
     hyprnotify
     waybar
+    brightnessctl
+    bluez
+    bluetui
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

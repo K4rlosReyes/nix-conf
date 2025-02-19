@@ -124,6 +124,7 @@
     brightnessctl
     bluez
     bluetui
+    lm_sensors
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

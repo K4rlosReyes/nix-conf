@@ -42,6 +42,9 @@
   programs.hyprland.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
+  services.hypridle.enable = true;
+  programs.hyprlock.enable = true;
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -109,8 +112,15 @@
     wireshark
     wl-clipboard
     openconnect
+
+    # hyprland stuff
     kitty
     wofi
+    hyprshot
+    hyprpaper
+    hyprsunset
+    hyprnotify
+    waybar
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

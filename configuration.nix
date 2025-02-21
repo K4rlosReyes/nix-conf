@@ -104,7 +104,6 @@
     wireshark
     wl-clipboard
     openconnect
-    ulauncher
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

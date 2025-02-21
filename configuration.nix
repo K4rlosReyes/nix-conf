@@ -38,13 +38,6 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
-  # Hyprland WM
-  programs.hyprland.enable = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  services.hypridle.enable = true;
-  programs.hyprlock.enable = true;
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -100,7 +93,6 @@
   environment.systemPackages = with pkgs; [
     neovim
     google-chrome
-    ghostty
     wpsoffice
     git
     docker-compose
@@ -112,19 +104,6 @@
     wireshark
     wl-clipboard
     openconnect
-
-    # hyprland stuff
-    kitty
-    wofi
-    hyprshot
-    hyprpaper
-    hyprsunset
-    hyprnotify
-    waybar
-    brightnessctl
-    bluez
-    bluetui
-    lm_sensors
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
@@ -139,8 +118,8 @@
         dbaeumer.vscode-eslint
         esbenp.prettier-vscode
         github.copilot
-	astro-build.astro-vscode # astro support
-	editorconfig.editorconfig
+        astro-build.astro-vscode # astro support
+        editorconfig.editorconfig
         
         # Git integration
         eamodio.gitlens

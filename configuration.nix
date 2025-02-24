@@ -74,6 +74,16 @@
     ];
   };
 
+  # Gaming config
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32bit = true;
+  };
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -95,6 +105,7 @@
     wireshark
     wl-clipboard
     openconnect
+    mangohud protonup-qt
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [

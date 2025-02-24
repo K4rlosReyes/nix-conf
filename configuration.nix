@@ -95,7 +95,6 @@
     wireshark
     wl-clipboard
     openconnect
-    zed-editor
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
